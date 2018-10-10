@@ -1,0 +1,52 @@
+body {
+  color: #282C34;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  min-width: 250px;
+}
+a {
+  color: #4285f4;
+  text-decoration: none;
+}
+.app-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.app-list .item {
+  padding: 5px;
+  filter: grayscale(0);
+  transition: fitter 0.5s ease;
+}
+.app-list .item:hover {
+  background: #F2F2F2;
+}
+
+.app-list .item .item-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.app-list .item .item-title {
+  display: inline-block;
+  max-width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+.app-list .item.disabled {
+  filter: grayscale(1)
+}
+
+.footer {
+  color: #636363;
+  font-family: 'Roboto',sans-serif;
+  font-size: 11px;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  background: #F0F0F0;
+}
