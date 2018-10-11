@@ -203,3 +203,34 @@ a {
   left: 12px;
 }
 
+/** btn **/
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  background: #2EB7F5;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow 100ms linear;
+  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.11);
+}
+.btn:hover {
+  background: #37C1FA;
+}
+.btn:active {
+  opacity: 0.9;
+  box-shadow: 0 0px 0px 4px rgba(0, 0, 0, 0.11);
+}
+
+/** tag **/
+
+.tag {
+  border-radius: 10px;
+  font-size: 11px;
+  color: #fff;
+  padding: 0 5px;
+  background: #FA5F21;
+  transform: scale(0.85);
+  display: inline-block;
+}

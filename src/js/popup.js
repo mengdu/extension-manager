@@ -26,8 +26,11 @@
     },
     methods: {
       enabledChange (index, item) {
-        console.log(index, item.enabled, item)
+        // console.log(index, item.enabled, item)
         chrome.management.setEnabled(item.id, item.enabled)
+      },
+      handleExec (index, item) {
+        chrome.management.launchApp(item.id)
       }
     },
     created: function () {

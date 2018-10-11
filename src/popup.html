@@ -23,6 +23,8 @@
         <img :src="item.icons[0].url" class="item-icon">
         <span class="item-title" :title="item.name + '\n' + item.description">{{item.name}}</span>
         <div class="f-right">
+          <button class="btn" v-if="item.isApp" @click="handleExec(index, item)">run</button>
+          <span class="tag" v-if="item.installType === 'development'">dev</span>
           <div class="switch" :title="item.enabled ? '关闭' : '启用'">
               <label>
                 <input type="checkbox" class="switch-input" v-model="item.enabled" @change="enabledChange(index, item)" />
@@ -40,11 +42,11 @@
   <footer class="footer">
     <div class="app-link">
       <a href="https://chrome.google.com/webstore/category/extensions?hl=zh-CN" target="_blank" title="https://chrome.google.com/webstore/category/extensions?hl=zh-CN"><img src="images/chrome16.png" />应用店</a>
-      <a href="chrome://extensions" target="_blank" title="chrome://extensions"><img src="images/extension.png" />扩展中心</a>
+      <!-- <a href="chrome://extensions" target="_blank" title="chrome://extensions"><img src="images/extension.png" />扩展中心</a> -->
     </div>
     <div class="copyright">
-      <span class="version">v0.1.0</span>
-      <span>make by <a href="https://github.com/mengdu" target="_blank" title="https://github.com/mengdu">Lanyue</a></span>&nbsp;
+      <span class="version">v1.0.0</span>
+      <span>make by <a href="https://github.com/mengdu" target="_blank" title="https://github.com/mengdu">@Lanyue</a></span>&nbsp;
       <span><img src="images/code.png" alt="github"> <a href="https://github.com/mengdu/extension-manager" target="_blank" title="https://github.com/mengdu/extension-manager">Github</a></span>
     </div>
 
