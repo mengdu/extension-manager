@@ -7,5 +7,4 @@
 
 ## 截图
 
-![截图1](screenshot1.jpg)
 ![截图2](screenshotgif.gif)
